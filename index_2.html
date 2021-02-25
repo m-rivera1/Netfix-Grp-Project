@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet GeoJSON Example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+    <style type="text/css">
+        .leaflet-container{background-color:#A9E2F3;}
+    </style>
+</head>
+
+<body>
+    <div id="map" style="width: 1200px; height: 700px"></div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+    <script>
+        var myGeoJSONPath = '/data/custom.geo.json';
+        var myCustomStyle = {
+            stroke: true,
+            color:'#FFFFFF',
+            weight: 1,
+            fill: true,
+            fillColor: '#000000',
+            fillOpacity: .5
+        }
+        $.getJSON(myGeoJSONPath,function(data){
+            var map = L.map('map').setView([40.4637, 3.7492], 2);
+
+            L.geoJson(data, {
+                clickable: true,
+                style: myCustomStyle
+            }).addTo(map);
+        })
+    </script>
+</body>
+</html>
