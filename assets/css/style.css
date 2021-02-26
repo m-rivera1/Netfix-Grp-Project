@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(20,20,20)!important;
+}
+
+.header{
+    background-color:transparent;
+}
+
+.header ul{
+    list-style-type: none;
+    position: relative;
+    padding-top: 10px;
+
+
+}
+
+.header ul li{
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
