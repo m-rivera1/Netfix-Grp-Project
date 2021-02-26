@@ -90,3 +90,68 @@ d3.csv('/data/Total_Subscribers_by_country_2019_2020.csv').then(function(demoDat
     //  console.log('Country:', data.Country, 'Subs:', data.Subscribers_2019, data.Subscribers_2020)
     });
 })
+
+// Use this link to get the geojson data.
+// var link = "/data/custom.geo.json";
+
+  
+// // determine colors for countries
+// function chooseColor(countryName) {
+
+// switch (countryName) {
+//   case "United States":
+//     return "yellow";
+//   case "Brazil":
+//     return "red";
+//   case "United Kingdom":
+//     return "orange";
+//   case "Mexico":
+//     return "green";
+//   case "France":
+//     return "purple";
+//   case "Canada":
+//     return "aqua";
+//   case "Germany":
+//     return "slateblue";
+//   case "Australia":
+//     return "lawngreen";
+//   case "Argentina":
+//     return "mediumblue";
+//   case "78219":
+//     return "deepskyblue";
+//   case "78244":
+//     return "magenta";
+//   case "78201":
+//     return "darkorange";
+//   default:
+//     return "black";
+//   }
+// }
+
+// // Grabbing our GeoJSON data..
+// d3.json(link, function(data) {
+//   // Creating a geoJSON layer with the retrieved data
+//   L.geoJson(data, {
+//     // Style each feature (in this case a neighborhood)
+//     style: function(feature) {
+//       return {
+//         color: "white",
+//         // Call the chooseColor function to decide which color to color our neighborhood (color based on borough)
+//         fillColor: chooseColor(feature.properties.name),
+//         fillOpacity: 0.5,
+//         weight: 1.5
+//       };
+//     },
+//     // Called on each feature
+//     onEachFeature: function(feature, layer) {
+//       // Set mouse events to change map styling
+//       layer.on({
+//         // When a user's mouse touches a map feature, the mouseover event calls this function, that feature's opacity changes to 90% so that it stands out
+//         mouseover: function(event) {
+//           layer = event.target;
+//           layer.setStyle({
+//             fillOpacity: 0.9
+//           });
+//         },
+//         // When the cursor no longer hovers over a map feature - when the mouseout event occurs - the feature's opacity reverts back to 50%
+//         mouseout: fun
