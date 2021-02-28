@@ -23,5 +23,31 @@ body{
 
 .header ul li a{
     text-decoration: none;
+    transition: all .1s ease-in-out;
     color: #fff;
+}
+
+
+.header ul li a:hover{
+    font-weight: bold;
+    transform: scale(2.5);
+}
+
+
+
+#main-dash{
+    border: 1px white solid;
+    box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
+    color: rgb(180, 178, 178);
+}
+
+.border-grid{
+    border: #fff 1px solid;
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
+}
+
+.rev_chart{
+
 }
