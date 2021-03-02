@@ -9,14 +9,24 @@
   <link rel="icon" href="./assets/images/nficon2016.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css"">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src=" https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type=" text/javascript" src="./assets/js/siteLoad.js"></script>
-  <script type=" text/javascript" src="./assets/js/rapidAPI.js"></script>
-
 </head>
 
 <body>
   <div id="nav-placeholder"></div>
+  <h3 class="text-light text-center">Search Netflix Catalog by Country</h3>
+  <div class="d-flex justify-content-center">
+    <select id="selDataset" onchange="optionChanged(this.value)" class="form-select form-select-lg col-md-3" aria-label=".form-select-lg example"></select>
+  </div>
+  <br>
+  <div id="main" class="text-light">test Here</div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script type=" text/javascript" src="./assets/js/rapidAPI.js"></script>
 </body>
 
 </html>
