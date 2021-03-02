@@ -8,14 +8,43 @@
   <title>Netflix Statistics</title>
   <link rel="icon" href="./assets/images/nficon2016.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css"">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type=" text/javascript" src="./assets/js/siteLoad.js"></script>
+  <script type=" text/javascript" src="./assets/js/logic_movie_table.js"></script>
+
+  
+
+
 
 </head>
 
 <body>
   <div id="nav-placeholder"></div>
+  <h2>Movie Stats: Average Ranking/Score of Movies Librarys by Country</h2>
+
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by country..">
+
+<table id="myTable">
+  <thead>
+  <tr class="header">
+    <th style="width:20%;">Country</th>
+    <th style="width:20%;">Continent</th>
+    <th style="width:20%;">Titles Available</th>
+    <th style="width:20%;">IMDB Movie Rating</th>
+    <th style="width:10%;">Media Critic</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+  </table>
 </body>
+
 
 </html>
