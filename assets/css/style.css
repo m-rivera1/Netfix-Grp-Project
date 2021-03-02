@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(20, 20, 20)!important;
+}
+
+td, th {
+    color: #fff;
+}
+
+.table-pos{
+    padding-left: 18%;
+}
+
+nav {
+    top: 0;
+}
+
+text{
+    color: #fff;
+}
+
+.header {
+    padding-top: 1%;
+    background-color: transparent;
+}
+
+.header ul {
+    list-style-type: none;
+    position: relative;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.header ul li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.header ul li a {
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    color: #fff;
+}
+
+.header ul li a:hover {
+    font-weight: bold;
+    transform: scale(2.5);
+}
+
+#main-dash {
+    border: 1px white solid;
+    box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
+    color: rgb(180, 178, 178);
+}
+
+.border-grid {
+    border: #fff 1px solid;
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
+}
+
+.grid-lib ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-lib li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tooltipme {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipme .tooltiptext {
+    visibility: hidden;
+    width: 165px;
+    background-color: rgba(20,20,20,0.8);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: -5px;
+    right: 0%;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltipme:hover .tooltiptext {
+    visibility: visible;
+  }

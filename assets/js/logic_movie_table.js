@@ -46,7 +46,7 @@ function myFunction() {
     filter = input.value.toUpperCase();
     table = document.getElementById("myTable");
     tr = table.getElementsByTagName("tr");
-  
+    tr.className("text-white")
     // Loop through all table rows to find the cells that match
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[0];

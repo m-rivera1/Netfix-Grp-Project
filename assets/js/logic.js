@@ -165,6 +165,8 @@ function getCatelogData() {
     chart.draw(data, google.charts.Bar.convertOptions(options));
   });
 
+
+
 }
 
 function optionChanged() {
