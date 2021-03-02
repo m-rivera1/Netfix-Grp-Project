@@ -1,53 +1,50 @@
-body{
-    background-color: rgb(20,20,20)!important;
+body {
+    background-color: rgb(20, 20, 20)!important;
 }
 
-.header{
-    background-color:transparent;
+nav {
+    top: 0;
 }
 
-.header ul{
+.header {
+    padding-top: 1%;
+    background-color: transparent;
+}
+
+.header ul {
     list-style-type: none;
     position: relative;
-    padding-top: 10px;
-
-
+    padding-top: 20px;
+    margin: 0;
 }
 
-.header ul li{
+.header ul li {
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
     color: #fff;
 }
 
-.header ul li a{
+.header ul li a {
     text-decoration: none;
     transition: all .1s ease-in-out;
     color: #fff;
 }
 
-
-.header ul li a:hover{
+.header ul li a:hover {
     font-weight: bold;
     transform: scale(2.5);
 }
 
-
-
-#main-dash{
+#main-dash {
     border: 1px white solid;
     box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
     color: rgb(180, 178, 178);
 }
 
-.border-grid{
+.border-grid {
     border: #fff 1px solid;
     color: #fff;
     text-align: center;
     box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
-}
-
-.rev_chart{
-
 }

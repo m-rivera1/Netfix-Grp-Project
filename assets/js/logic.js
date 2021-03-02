@@ -1,3 +1,4 @@
+
 google.charts.load('current', {
   'packages': ['geochart'],
   'mapsApiKey': API_KEY
@@ -127,7 +128,7 @@ function drawRegionsMap() {
 
 var sel = d3.select('#selDataset'); // Get Element
 var sel_value; // Stage empty var
-google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.load('current', { packages: ['corechart', 'bar'] });
 google.charts.setOnLoadCallback(getCatelogData);
 
 function getCatelogData() {
@@ -136,33 +137,39 @@ function getCatelogData() {
     data.forEach(function (item) {
       country_list.push(item.Country)
     })
-    country_list.forEach(data => {
-      sel.append("option").property("value", data).text(data);
+
+    country_list.sort()
+    country_list.forEach(d => {
+      sel.append("option").property("value", d).text(d);
       sel_value = sel.property("value");
     })
 
     var catelogBarData = data.filter(data => data.Country == sel_value);// Retrieve data based on selection
 
-    var shows= parseInt(catelogBarData[0].Shows.replace(",",""))
-    var movies = parseInt(catelogBarData[0].Films.replace(",",""))
+    var shows = parseInt(catelogBarData[0].Shows.replace(",", ""))
+    var movies = parseInt(catelogBarData[0].Films.replace(",", ""))
 
     var data = google.visualization.arrayToDataTable([
-      ['Category', '#', { role: 'style' } ],
+      ['Category', '#', { role: 'style' }],
       ['Movies', movies, 'color: #FF0000'],
       ['TV Shows', shows, 'color: #FA8072']
     ]);
     var options = {
-      legend: { position: 'none' }
+      backgroundColor: { fill: 'transparent' },
+      legend: { position: 'none' },
+      vAxis: {textStyle: {color: 'white'}},
+      hAxis: {textStyle: {color: 'white'}}
+      
     };
-    
-    var chart = new google.visualization.BarChart(document.getElementById('bar'));
-    chart.draw(data, options);
 
+    var chart = new google.visualization.BarChart(document.getElementById('bar'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
   });
+
 }
 
 function optionChanged() {
 
   getCatelogData()
 }
-getCatelogData()
+

@@ -9,22 +9,16 @@
   <link rel="icon" href="./assets/images/nficon2016.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css"">
-    <script type=" text/javascript" src="./assets/js/Chart.min.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type=" text/javascript" src="./assets/js/siteLoad.js"></script>
+  <script type=" text/javascript" src="./assets/js/rapidAPI.js"></script>
+  <script type=" text/javascript" src="./assets/js/Chart.min.js"></script>
   <script type=" text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
 
 <body>
-  <div class="header navbar">
-    <img src="./assets/images/Netflix_banner.png" width="150" height="65">
-    <ul>
-      <li><a href=index.html>Home</a></li>
-      <li>TV Shows</li>
-      <li>Movies</li>
-      <li>Revenue</li>
-    </ul>
-  </div>
+  <div id="nav-placeholder"></div>
   <div class="container col-md-7" id="main-dash">
     <h1>Netflix Subscribers by Country 2020</h1>
     <div id="regions_div" class="map_chart" style="width: 950px; height: 600px;"></div>
@@ -47,7 +41,7 @@
       </div>
     </div>
   </div>
-<br>
+  <br>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://d3js.org/d3-array.v2.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -55,6 +49,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
   <script type="text/javascript" src="./assets/js/config.js"></script>
   <script type="text/javascript" src="./assets/js/logic.js"></script>
+
 </body>
 
 </html>
