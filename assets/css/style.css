@@ -49,3 +49,38 @@ nav {
     text-align: center;
     box-shadow: 1px 0px 15px -1px rgba(255, 255, 255, 0.8);
 }
+
+.grid-lib ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-lib li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tooltipme {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipme .tooltiptext {
+    visibility: hidden;
+    width: 165px;
+    background-color: rgba(20,20,20,0.8);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: -5px;
+    right: 0%;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltipme:hover .tooltiptext {
+    visibility: visible;
+  }

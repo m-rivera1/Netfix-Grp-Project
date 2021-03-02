@@ -32,13 +32,12 @@ d3.csv("Data/DataNetflixRevenuebyRegionV2.csv").then(function (data) {
     .entries(filter_data)
 
   var data = grouped_data;
-  // console.log(grouped_data)
-  // var text = "";
+
 
   var width = 200;
   var height = 260;
   var thickness = 25;
-  var duration = 750;
+
 
   var radius = Math.min(width, height) / 2;
   var color = d3.scaleOrdinal()

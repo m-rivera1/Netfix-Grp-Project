@@ -1,4 +1,4 @@
-/* .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -17,12 +17,12 @@
     content: " ";
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
-    /* left: 50%;
+    left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  } */
+  }
 
   .d3-tip {
     line-height: 1;
@@ -32,6 +32,7 @@
     color: #fff;
     border-radius: 2px;
   }
+
   /* Creates a small triangle extender for the tooltip */
   .d3-tip:after {
     box-sizing: border-box;

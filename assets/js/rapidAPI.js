@@ -12,7 +12,6 @@ function populateCountryDropDown() {
     });
 }
 function getAPINetflixData(cData) {
-    var nData = []
     var country = cData
     console.log(cData)
     fetch(`https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi?q=get%3Anew7%3A${country}&p=1&t=ns&st=adv`, {
@@ -24,35 +23,57 @@ function getAPINetflixData(cData) {
         }
     })
         .then(response => {
-            response.json().then(data => nData.push(data.ITEMS))
+            response.json().then(data => {
+                data.ITEMS.forEach(function (item) {
+                    if (item.rating === ""){
+                        item.rating = 'N/A'
+                    // console.log(item.title)
+                    // console.log(item.rating)
+                    }
+                    renderLayout(item)
+                })
+            })
         })
         .catch(err => {
             console.error(err);
         });
-        renderLayout(nData)
+
 }
 const main = document.getElementById("main");
-function renderLayout(countryData){
-    countryData.forEach(d => {console.log(d.title)})
-    // console.log(countryData)
+function renderLayout(countryData) {
+    console.log(countryData)
+    // Creating elemnts for our data inside the main tag. 
+    const el = document.createElement('li');
+    const image = document.createElement('img');
+    const div = document.createElement('div')
+    const span = document.createElement('span')
 
-    countryData.forEach(element => {
-        // Creating elemnts for our data inside the main tag. 
-          const el = document.createElement('div');
-          const image = document.createElement('img');
-          const text = document.createElement('h2');
-          text.innerHTML = `${element.title}`;
-          image.src = element.image;
-          console.log(image)
-          el.appendChild(image);
-          el.appendChild(text);
-          main.appendChild(el);
-      }); 
+    div.className = "tooltipme";
+    span.className = "tooltiptext"
+
+    // var test = []
+    // test.push(countryData)
+    //     console.log(test)
+
+
+    span.innerHTML = ('<strong>Title: </strong>'  + countryData.title + '<br>' + '<strong>Rating: </strong>' + countryData.rating)
+    image.src = countryData.image;
+
+    el.appendChild(div);
+    div.appendChild(image);
+    div.appendChild(span)
+    main.appendChild(el);
+
 }
 
 function optionChanged() {
-
     populateCountryDropDown()
+
+    var div = document.getElementById("main");
+
+    while (div.firstChild) {
+        div.removeChild(div.firstChild);
+    }
 }
 
 
