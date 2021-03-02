@@ -1,0 +1,71 @@
+Country,Continent,Total_Titles_Available_on_Netflix,Avg_IMDb_Audience_Ranking,Avg_Metacritic_Critics_Score
+Albania,Europe,2242,7.1,64.1
+Argentina,South America,3034,7.04,63.5
+Australia,Australasia,5349,7.02,62.2
+Austria,Europe,3878,7.03,63.1
+Azerbaijan,Europe,2117,7.13,65.3
+Bahamas,North America,2234,7.09,64
+Belgium,Europe,4121,7.05,62.4
+Bolivia,South America,3607,7.05,64
+Brazil,South America,4208,7.07,63.7
+Bulgaria,Europe,2250,7.11,64.1
+Canada,North America,5730,6.95,61.4
+Chile,South America,4281,7.05,64
+Colombia,South America,4282,7.05,64
+Costa Rica,North America,4115,7.05,64
+Croatia,Europe,4652,7.08,63.7
+Czech Republic,Europe,5064,7.05,63.4
+Denmark,Europe,3525,7.03,63.6
+Ecuador,South America,3470,7.05,64
+Egypt,Africa,2494,7.06,64.3
+Estonia,Europe,4339,7.12,64.8
+Finland,Europe,3349,7.03,63.6
+France,Europe,3978,7.07,63.6
+Georgia,Europe,2116,7.13,65.2
+Germany,Europe,3995,7.01,62.9
+Greece,Europe,4438,7.1,64.3
+Guatemala,North America,4117,7.05,64
+Hong Kong,Asia,3861,7.06,63.2
+Hungary,Europe,5062,7.08,63.2
+Iceland,Europe,4781,7.1,64.2
+India,Asia,5591,7.12,63.8
+Indonesia,Asia,4684,7.12,63.3
+Ireland,Europe,5246,6.96,61.6
+Israel,Europe,4393,7.1,64.1
+Italy,Europe,3526,7.05,63.7
+Japan,Asia,5065,6.98,63.1
+Kenya,Africa,4612,7.11,63.1
+Latvia,Europe,4577,7.12,64.8
+Lithuania,Europe,4841,7.12,64.5
+Luxembourg,Europe,4534,7.09,62.8
+Malaysia,Asia,4898,7.1,63
+Mexico,North America,4316,7.05,63.9
+Moldova,Europe,2145,7.12,65
+Netherlands,Europe,3655,7.03,62.6
+New Zealand,Australasia,4635,7.03,62.7
+Norway,Europe,3203,7.03,63.6
+Panama,North America,2234,7.09,64
+Peru,South America,4118,7.05,64
+Philippines,Asia,4913,7.11,63.1
+Poland,Europe,3398,6.98,64
+Portugal,Europe,3142,7.13,64.9
+Romania,Europe,4686,7.08,63
+Russia,Europe,4898,7.13,64.9
+Serbia,Europe,2339,7.09,63.7
+Singapore,Asia,4768,7.11,63.3
+Slovakia,Europe,5077,7.04,63.4
+Slovenia,Europe,3798,7.1,63.7
+South Africa,Africa,4987,7.09,62.7
+South Korea,Asia,4065,7,64.5
+Spain,Europe,3522,7.12,64.3
+Sweden,Europe,3579,7.03,63.4
+Switzerland,Europe,4593,7.01,61.6
+Taiwan,Asia,3611,7.06,63.3
+Thailand,Asia,4864,7.07,62.9
+Turkey,Asia,2812,7.03,62.6
+UAE,Asia,2906,7.06,64.3
+Ukraine,Europe,4640,7.13,65.3
+United Kingdom,Europe,5673,6.97,61.7
+United States,North America,5879,6.95,62.9
+Uruguay,South America,4215,7.05,64
+Venezuela,South America,4180,7.05,64
