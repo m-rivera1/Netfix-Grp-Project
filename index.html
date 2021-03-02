@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Statistics</title>
+  <link rel="icon" href="./assets/images/nficon2016.ico">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css"">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type=" text/javascript" src="./assets/js/siteLoad.js"></script>
+
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+  <div class="container col-md-7" id="main-dash">
+    <h1>Netflix Subscribers by Country 2020</h1>
+    <div id="regions_div" class="map_chart" style="width: 950px; height: 600px;"></div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div id="total_rev" class="rev_chart col-sm border-grid">
+        <h5>Netflix's 2020 revenue by region ($)</h5>
+      </div>
+      <div class="col-sm border-grid">
+        <h5>Catelog per Country</h5>
+        <hr style="background-color: white;">
+        <p>Select a country:</p>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <div id="bar"></div>
+      </div>
+      <div class="col-sm border-grid">
+        <h5>Another chart here</h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script type=" text/javascript" src="./assets/js/Chart.min.js"></script>
+  <script type=" text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="./assets/js/config.js"></script>
+  <script type="text/javascript" src="./assets/js/logic.js"></script>
+
+</body>
+
+</html>
