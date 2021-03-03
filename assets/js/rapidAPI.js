@@ -56,7 +56,7 @@ function renderLayout(countryData) {
     //     console.log(test)
 
 
-    span.innerHTML = ('<strong>Title: </strong>'  + countryData.title + '<br>' + '<strong>Rating: </strong>' + countryData.rating)
+    span.innerHTML = ('<strong>Title: </strong>'  + countryData.title + '<br>' + '<strong>Rating: </strong>' + countryData.rating + '<br>' + '<strong>Release Yr: </strong>' + countryData.released + '<br>' + '<strong>Length: </strong>' + countryData.runtime)
     image.src = countryData.image;
 
     el.appendChild(div);
