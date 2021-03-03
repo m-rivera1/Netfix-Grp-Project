@@ -8,7 +8,7 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 
 subArray = [['Country', 'Subscribers']]
 
-d3.csv("data/Total_Subscribers_by_country_2019_2020.csv").then(function (data) {
+d3.csv("./data/Total_Subscribers_by_country_2019_2020.csv").then(function (data) {
   for (var i = 0; i < data.length; i++) {
     var country = data[i].Country;
     var subscriber_count = parseFloat(data[i].Subscribers_2020);
@@ -17,7 +17,7 @@ d3.csv("data/Total_Subscribers_by_country_2019_2020.csv").then(function (data) {
   }
 });
 
-d3.csv("Data/DataNetflixRevenuebyRegionV2.csv").then(function (data) {
+d3.csv("./data/DataNetflixRevenuebyRegionV2.csv").then(function (data) {
   filter_data = data.filter(d => d.Years == 2020)
   // console.log(filter_data)
   const formatter = new Intl.NumberFormat('en-US', {
@@ -131,7 +131,7 @@ google.charts.load('current', { packages: ['corechart', 'bar'] });
 google.charts.setOnLoadCallback(getCatelogData);
 
 function getCatelogData() {
-  d3.csv("Data/catelog by country.csv").then(function (data) {
+  d3.csv("./data/catelog by country.csv").then(function (data) {
     var country_list = []
     data.forEach(function (item) {
       country_list.push(item.Country)

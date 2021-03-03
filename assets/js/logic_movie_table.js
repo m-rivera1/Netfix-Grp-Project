@@ -1,5 +1,5 @@
   // Import Data
-  d3.csv('data/Research-Visualizing_Netflix-Movies_IMDB.csv').then(function(movieData) {
+  d3.csv('./data/Research-Visualizing_Netflix-Movies_IMDB.csv').then(function(movieData) {
 
 
   // Parse the data

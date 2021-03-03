@@ -34,7 +34,7 @@ var chartGroup = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Parse the Data
-d3.csv("/data/rating_data_combined.csv").then(function (ratingData) {
+d3.csv("./data/rating_data_combined.csv").then(function (ratingData) {
 
 
     // List of subgroups = header of the csv files = soil condition here

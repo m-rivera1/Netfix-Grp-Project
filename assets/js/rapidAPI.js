@@ -3,7 +3,7 @@ var sel_value; // Stage empty var
 
 populateCountryDropDown()
 function populateCountryDropDown() {
-    d3.json("Data/CountryCode.json").then(function (data) {
+    d3.json("./data/CountryCode.json").then(function (data) {
         data.forEach(function (item) {
             sel.append("option").property("value", item.Code).text(item.Name);
             sel_value = sel.property("value");
@@ -41,11 +41,7 @@ function getAPINetflixData(cData) {
 }
 const main = document.getElementById("main");
 function renderLayout(countryData) {
-<<<<<<< HEAD
     // console.log(countryData)
-=======
-  //  console.log(countryData)
->>>>>>> 0f6b541d78475842e9fc5d4fccd0b1505ffb8dbf
     // Creating elemnts for our data inside the main tag. 
     const el = document.createElement('li');
     const image = document.createElement('img');
