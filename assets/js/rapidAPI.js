@@ -41,7 +41,7 @@ function getAPINetflixData(cData) {
 }
 const main = document.getElementById("main");
 function renderLayout(countryData) {
-    console.log(countryData)
+    // console.log(countryData)
     // Creating elemnts for our data inside the main tag. 
     const el = document.createElement('li');
     const image = document.createElement('img');
