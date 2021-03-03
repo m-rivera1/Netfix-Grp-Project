@@ -8,7 +8,7 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 
 subArray = [['Country', 'Subscribers']]
 
-d3.csv("Data/Total_Subscribers_by_country_2019_2020.csv").then(function (data) {
+d3.csv("data/Total_Subscribers_by_country_2019_2020.csv").then(function (data) {
   for (var i = 0; i < data.length; i++) {
     var country = data[i].Country;
     var subscriber_count = parseFloat(data[i].Subscribers_2020);
