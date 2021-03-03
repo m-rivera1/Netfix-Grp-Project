@@ -156,21 +156,19 @@ function getCatelogData() {
     var options = {
       backgroundColor: { fill: 'transparent' },
       legend: { position: 'none' },
-      vAxis: {textStyle: {color: 'white'}},
-      hAxis: {textStyle: {color: 'white'}}
-      
+      vAxis: { textStyle: { color: 'white' } },
+      hAxis: { textStyle: { color: 'white' } }
+
     };
 
     var chart = new google.visualization.BarChart(document.getElementById('bar'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
   });
 
-
-
 }
+
 
 function optionChanged() {
 
-  getCatelogData()
-}
-
+      getCatelogData()
+    }
